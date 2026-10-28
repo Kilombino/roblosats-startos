@@ -1,13 +1,13 @@
 import { VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.8.7.15:0',
+  version: '0.8.7.15:1',
   releaseNotes: {
-    en_US: `Roblosats v0.8.7-rl15: Rose Garden joins the federation, which is now Kilobot, marcanoTrades and Rose Garden, all reached over Tor. Keep your robot's token: it is the only way to recover the robot.`,
-    es_ES: `Roblosats v0.8.7-rl15: Rose Garden entra en la federación, que queda en Kilobot, marcanoTrades y Rose Garden, todos por Tor. Guarda el token de tu robot: es la única forma de recuperarlo.`,
-    de_DE: `Roblosats v0.8.7-rl15: Rose Garden tritt der Föderation bei, die nun aus Kilobot, marcanoTrades und Rose Garden besteht, alle über Tor. Bewahre das Token deines Roboters auf: Nur damit lässt er sich wiederherstellen.`,
-    pl_PL: `Roblosats v0.8.7-rl15: Rose Garden dołącza do federacji, która obejmuje teraz Kilobot, marcanoTrades i Rose Garden, wszystkie przez Tor. Zachowaj token swojego robota: tylko nim go odzyskasz.`,
-    fr_FR: `Roblosats v0.8.7-rl15 : Rose Garden rejoint la fédération, désormais Kilobot, marcanoTrades et Rose Garden, tous via Tor. Gardez le jeton de votre robot : c'est le seul moyen de le récupérer.`,
+    en_US: `Fixes the coordinators' limits, order book and robots, which did not load: each coordinator is now asked by its own onion name. Federation: Kilobot, marcanoTrades and Rose Garden.`,
+    es_ES: `Arregla los límites, el libro de órdenes y los robots de los coordinadores, que no cargaban: ahora se pregunta a cada coordinador por su propio onion. Federación: Kilobot, marcanoTrades y Rose Garden.`,
+    de_DE: `Behebt Limits, Orderbuch und Roboter der Koordinatoren, die nicht luden: Jeder Koordinator wird jetzt unter seinem eigenen Onion-Namen angefragt.`,
+    pl_PL: `Naprawia limity, księgę zleceń i roboty koordynatorów, które się nie ładowały: każdy koordynator jest teraz pytany pod własnym adresem onion.`,
+    fr_FR: `Corrige les limites, le carnet d'ordres et les robots des coordinateurs, qui ne se chargeaient pas : chaque coordinateur est maintenant interrogé sous son propre nom onion.`,
   },
   migrations: {},
 })
