@@ -9,7 +9,7 @@
 - **Image:** `ghcr.io/kilombino/roblosats-client` (built from the `nodeapp` of Kilombino/roblosats). It writes one Tor bridge per coordinator of the federation it ships with, so new coordinators arrive with new versions; a coordinator's admin panel is never relayed.
 - **Dependency:** Tor (its SOCKS proxy), required.
 - **Interface:** Web UI (port 12596, plain HTTP behind StartOS's HTTPS: `PLAIN_HTTP=1`).
-- **Volume:** `main`, in backups.
+- **Volume:** `main` (nothing in it matters: the robot token lives in the browser).
 
 Based on [RoboSats/robosats-startos](https://github.com/RoboSats/robosats-startos) (AGPL-3.0).
 

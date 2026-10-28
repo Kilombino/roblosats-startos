@@ -11,3 +11,27 @@ npm run build
 ncc: Version 0.38.4
 ncc: Compiling file index.js into CJS
 ncc: Using typescript@6.0.3 (local user-provided)
+2598kB  javascript/index.js
+2598kB  [5024ms] - ncc 0.38.4
+   Re-evaluating ingredients...
+   Packing 'roblosats_x86_64.s9pk'...
+start-cli s9pk pack --arch=x86_64 -o roblosats_x86_64.s9pk
+
+[1;32m✅ Build Complete![0m
+
+[1;37m📦 Roblosats[0m   [36mv0.8.7.14:0[0m
+───────────────────────────────
+ [1;36mFilename:[0m   roblosats_x86_64.s9pk
+ [1;36mSize:[0m       26M
+ [1;36mArch:[0m       x86_64
+ [1;36mSDK:[0m        2.0.9
+ [1;36mGit:[0m        [0;31mb88a6e2179082af126037e1165a010a2c90f820e-modified[0m
+
+   Re-evaluating ingredients...
+   Packing 'roblosats_aarch64.s9pk'...
+start-cli s9pk pack --arch=aarch64 -o roblosats_aarch64.s9pk
+Error de Docker: cannot overwrite digest sha256:24992f56f7115e01caf748b58ef7cfee547ee0bb2eecc9b4808b858b6a4e16f1
+
+make: *** [node_modules/@start9labs/start-sdk/s9pk.mk:79: roblosats_aarch64.s9pk] Error 3
+EXIT 2
+-rw-rw-r-- 1 start10 start10 26473786 Oct 28 10:50 roblosats_x86_64.s9pk

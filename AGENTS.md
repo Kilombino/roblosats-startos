@@ -26,7 +26,9 @@ verified, tried, and decided belongs in the commit message and the PR body.
 
 ## This repo
 
-- **This packages the Robosats _client_, not a coordinator.** `recksato/robosats-client` is upstream's self-hosted front end; don't document or configure it as if it ran an exchange.
-- **Tor is a hard dependency with its own health check**, because coordinators are onion services. The SOCKS lookup passes `fallbackPort` so the resolved address stays constant across tor install/update/uninstall and never restarts Robosats on tor churn; it is then split into `TOR_PROXY_IP`/`TOR_PROXY_PORT`, which the image takes as two separate values.
+- **This packages the Roblosats _client_, not a coordinator.** `ghcr.io/kilombino/roblosats-client` is built from `nodeapp/` of Kilombino/roblosats; its Tor bridges come from the federation.json inside the image, so a new coordinator means a new image, not a change here.
+- **The image's nginx listens with TLS unless `PLAIN_HTTP=1`**; StartOS adds its own HTTPS, so main.ts sets it.
+- **Packing both arches fails with "cannot overwrite digest"** when the other arch's image is still in the local docker: `docker image rm` it between the two packs.
+- **Tor is a hard dependency with its own health check**, because coordinators are onion services. The SOCKS lookup passes `fallbackPort` so the resolved address stays constant across tor install/update/uninstall and never restarts Roblosats on tor churn; it is then split into `TOR_PROXY_IP`/`TOR_PROXY_PORT`, which the image takes as two separate values.
 - **The health check fetches `/selfhosted` over the service's own bridge address** from `sdk.host.getOwn`, not a hostname — `<pkg>.startos` is deprecated. It returns `starting` rather than failing while that address is unresolved.
 - **There is nothing worth backing up.** The robot token lives in the browser and funds are on Lightning — don't add state, and don't imply a restore recovers an identity.
