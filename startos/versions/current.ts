@@ -1,13 +1,13 @@
 import { VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.8.8.20:0',
+  version: '0.8.8.23:0',
   releaseNotes: {
-    en_US: `Roblosats 0.8.8-rl20: the trade screen now redraws as soon as an action changes the order (for example after Confirm fiat sent it no longer keeps showing the button). Based on RoboSats v0.8.8. Federation: Kilobot, marcanoTrades and Rose Garden.`,
-    es_ES: `Roblosats 0.8.8-rl20: la pantalla de la orden se redibuja en cuanto una acción la cambia (por ejemplo, tras Confirmar fiat enviado ya no sigue mostrando el botón). Basada en RoboSats v0.8.8. Federación: Kilobot, marcanoTrades y Rose Garden.`,
-    de_DE: `Roblosats 0.8.8-rl20: Der Handelsbildschirm wird sofort neu gezeichnet, wenn eine Aktion die Order ändert (z. B. zeigt er nach „Fiat gesendet bestätigen“ den Knopf nicht mehr an). Basierend auf RoboSats v0.8.8.`,
-    pl_PL: `Roblosats 0.8.8-rl20: ekran transakcji odświeża się od razu, gdy akcja zmienia zlecenie (np. po potwierdzeniu wysłania fiata nie pokazuje już przycisku). Oparty na RoboSats v0.8.8.`,
-    fr_FR: `Roblosats 0.8.8-rl20 : l'écran de l'échange se redessine dès qu'une action modifie l'ordre (par exemple, après « Confirmer l'envoi du fiat », il n'affiche plus le bouton). Basé sur RoboSats v0.8.8.`,
+    en_US: `Roblosats 0.8.8-rl23: new coordinators now start with a 25M sats order limit instead of 250k sats (under $1 on the BTC chain), so young coordinators such as Rose Garden can take normal-sized orders. The limit still grows every 14 days and is lifted after 24 weeks. Federation: Kilobot, marcanoTrades and Rose Garden.`,
+    es_ES: `Roblosats 0.8.8-rl23: los coordinadores nuevos empiezan con un límite de 25M sats por orden en vez de 250k sats (menos de 1 $ en la cadena BTC), así que coordinadores jóvenes como Rose Garden pueden aceptar órdenes de tamaño normal. El límite sigue creciendo cada 14 días y desaparece a las 24 semanas. Federación: Kilobot, marcanoTrades y Rose Garden.`,
+    de_DE: `Roblosats 0.8.8-rl23: Neue Koordinatoren starten jetzt mit einem Orderlimit von 25M sats statt 250k sats (unter 1 $ auf der BTC-Chain), sodass junge Koordinatoren wie Rose Garden normale Orders annehmen können. Das Limit wächst weiterhin alle 14 Tage und entfällt nach 24 Wochen.`,
+    pl_PL: `Roblosats 0.8.8-rl23: nowi koordynatorzy zaczynają z limitem 25M satów na zlecenie zamiast 250k (poniżej 1 $ na łańcuchu BTC), więc młodzi koordynatorzy, jak Rose Garden, mogą przyjmować zlecenia normalnej wielkości. Limit nadal rośnie co 14 dni i znika po 24 tygodniach.`,
+    fr_FR: `Roblosats 0.8.8-rl23 : les nouveaux coordinateurs démarrent désormais avec une limite de 25M sats par ordre au lieu de 250k sats (moins de 1 $ sur la chaîne BTC), si bien que les jeunes coordinateurs comme Rose Garden peuvent accepter des ordres de taille normale. La limite augmente toujours tous les 14 jours et disparaît après 24 semaines.`,
   },
   migrations: {},
 })
