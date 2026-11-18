@@ -1,13 +1,13 @@
 import { VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.9.1:0',
+  version: '0.9.2:0',
   releaseNotes: {
-    en_US: `Roblosats 0.9.1: Spamcoin works like any other currency in the create form (Buy/Sell, market price + premium or a fixed price, on-chain escrow switch) instead of switching to RoboSats' swap mode; amounts are typed in whole Spamsats. Taking a Spamcoin range order shows Spamsats and the right fee estimate, and the final summary shows Spamcoin amounts in Spamsats and 丰 sat orders in sats.`,
-    es_ES: `Roblosats 0.9.1: Spamcoin funciona como cualquier otra moneda en el formulario de crear (comprar/vender, precio de mercado + prima o precio fijo, interruptor de depósito on-chain) en vez de pasar al modo swap de RoboSats; los importes se escriben en Spamsats enteros. Al tomar una orden Spamcoin con rango se ven Spamsats y la comisión correcta, y el resumen final muestra los importes Spamcoin en Spamsats y las órdenes 丰 sat en sats.`,
-    de_DE: `Roblosats 0.9.1: Spamcoin funktioniert im Erstellen-Formular wie jede andere Währung (Kaufen/Verkaufen, Marktpreis + Aufschlag oder Festpreis, Onchain-Treuhand) statt in den Swap-Modus von RoboSats zu wechseln; Beträge in ganzen Spamsats.`,
-    pl_PL: `Roblosats 0.9.1: Spamcoin działa w formularzu tworzenia jak każda inna waluta (kupno/sprzedaż, cena rynkowa + premia lub stała cena, depozyt onchain) zamiast przełączać się w tryb swap RoboSats; kwoty w pełnych Spamsats.`,
-    fr_FR: `Roblosats 0.9.1 : Spamcoin fonctionne comme toute autre devise dans le formulaire de création (achat/vente, prix du marché + prime ou prix fixe, dépôt onchain) au lieu de passer au mode swap de RoboSats ; montants en Spamsats entiers.`,
+    en_US: `Roblosats 0.9.2: clearer 丰 sat orders. In the book a 丰 sat order shows its sats in Amount and what is paid in exchange next to its payment methods ("2,100 Spamsats", or "≈ 2,100 Spamsats" while it follows the market price); "Sats now" shows "—" for them and explains the column in a tooltip. The order page reads "Paid with: 2,100 Spamsats via <methods>". The leftover RoboSats "Swap In/Out" options are gone from the book filter and the Search dialog.`,
+    es_ES: `Roblosats 0.9.2: órdenes 丰 sat más claras. En el libro una orden 丰 sat muestra sus sats en Importe y lo que se paga a cambio junto a sus métodos de pago («2.100 Spamsats», o «≈ 2.100 Spamsats» si sigue el precio de mercado); «Sats ahora» muestra «—» en ellas y explica la columna en una ayuda. La página de la orden dice «Se paga con: 2.100 Spamsats por <métodos>». Fuera las opciones «Swap In/Out» heredadas de RoboSats del filtro del libro y del diálogo Buscar.`,
+    de_DE: `Roblosats 0.9.2: klarere 丰-sat-Aufträge. Im Orderbuch zeigt ein 丰-sat-Auftrag seine Sats im Betrag und die Gegenleistung neben den Zahlungsmethoden („2.100 Spamsats“ oder „≈ 2.100 Spamsats“ bei Marktpreis); „Sats jetzt“ zeigt dort „—“. Die alten RoboSats-Optionen „Swap In/Out“ sind entfernt.`,
+    pl_PL: `Roblosats 0.9.2: czytelniejsze zlecenia 丰 sat. W księdze zlecenie 丰 sat pokazuje sats w kwocie, a zapłatę obok metod płatności („2 100 Spamsats” lub „≈ 2 100 Spamsats” przy cenie rynkowej); „Sats teraz” pokazuje „—”. Usunięto stare opcje RoboSats „Swap In/Out”.`,
+    fr_FR: `Roblosats 0.9.2 : ordres 丰 sat plus clairs. Dans le carnet, un ordre 丰 sat affiche ses sats dans le montant et ce qui est payé en échange à côté des moyens de paiement (« 2 100 Spamsats », ou « ≈ 2 100 Spamsats » au prix du marché) ; « Sats maintenant » affiche « — ». Les anciennes options RoboSats « Swap In/Out » ont disparu.`,
   },
   migrations: {},
 })
