@@ -25,7 +25,7 @@ export const manifest = setupManifest({
     roblosats: {
       source: {
         dockerTag:
-          'ghcr.io/kilombino/roblosats-client:v0.9.11@sha256:78879f85feacda127783e9b989f3987c289c8040903ee031caa60a4f69ec88e7',
+          'ghcr.io/kilombino/roblosats-client:v0.9.12@sha256:ffa0b5bfbfd936e8eb86322dbdf996192befad818f5b23c4271376544a110610',
       },
       arch: ['x86_64', 'aarch64'],
     },
