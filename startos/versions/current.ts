@@ -1,13 +1,13 @@
 import { VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.9.15:0',
+  version: '0.9.16:0',
   releaseNotes: {
-    en_US: `Roblosats 0.9.15: coordinator "Stats for Nerds" fixes: the 24 h contracted volume counts Spamcoin trades and trades taken with an onchain bond, the coordinator's commit hash links to its commit on Kilombino/roblosats, and its Lightning node links to its Nodex page.`,
-    es_ES: `Roblosats 0.9.15: arreglos en las «estadísticas para nerds» del coordinador: el volumen contratado de 24 h cuenta los intercambios en Spamcoin y los tomados con fianza on-chain, el hash de commit del coordinador enlaza a su commit en Kilombino/roblosats y su nodo Lightning enlaza a su página en Nodex.`,
-    de_DE: `Roblosats 0.9.15: Koordinator-Statistiken korrigiert (24-h-Volumen mit Spamcoin- und Onchain-Kautions-Trades, Commit-Link, Nodex-Link).`,
-    pl_PL: `Roblosats 0.9.15: poprawione statystyki koordynatora (wolumen 24 h z transakcjami Spamcoin i z kaucją onchain, link do commita, link do Nodex).`,
-    fr_FR: `Roblosats 0.9.15 : statistiques du coordinateur corrigées (volume 24 h avec les échanges Spamcoin et à caution onchain, lien du commit, lien Nodex).`,
+    en_US: `Roblosats 0.9.16: the winner of a dispute also gets part of the loser's bond, also in Lightning orders; the web client offers the Android app (Zapstore, F-Droid, GitHub); a clearer dispute page for coordinators; Kilobot's new description.`,
+    es_ES: `Roblosats 0.9.16: el ganador de una disputa también recibe parte de la fianza del perdedor, también en órdenes Lightning; el cliente web ofrece la app de Android (Zapstore, F-Droid, GitHub); una página de disputa más clara para los coordinadores; nueva descripción de Kilobot.`,
+    de_DE: `Roblosats 0.9.16: der Gewinner eines Streitfalls erhält auch einen Teil der Kaution des Verlierers, auch bei Lightning-Orders; der Web-Client bietet die Android-App an; übersichtlichere Streitfallseite für Koordinatoren.`,
+    pl_PL: `Roblosats 0.9.16: zwycięzca sporu otrzymuje też część kaucji przegranego, także w zleceniach Lightning; klient webowy oferuje aplikację Android; czytelniejsza strona sporu dla koordynatorów.`,
+    fr_FR: `Roblosats 0.9.16 : le gagnant d'un litige reçoit aussi une part de la caution du perdant, aussi dans les ordres Lightning ; le client web propose l'app Android ; page de litige plus claire pour les coordinateurs.`,
   },
   migrations: {},
 })
